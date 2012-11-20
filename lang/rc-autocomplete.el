@@ -21,10 +21,10 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;AutoComplete;;;;;;;;;;;;;;;;;;;;;;;
 ;(add-to-list 'load-path "/usr/share/emacs/site-lisp/auto-complete")
-;(require 'auto-complete-config)
-;(add-to-list 'ac-dictionary-directories "/local/github/config/emacs-config/3rd-party/auto-complete/dict")
-;(ac-config-default)
-;(global-auto-complete-mode t)
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "/local/github/emacs-config/3rd-party/auto-complete/dict")
+(ac-config-default)
+(global-auto-complete-mode t)
 
 ;; trigger using TAB and disable auto start
 ;(custom-set-variables
