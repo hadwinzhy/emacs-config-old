@@ -44,8 +44,10 @@
 (global-set-key [f5] 'delete-other-windows)
 
 (setq-default indent-tabs-mode nil)    ; use only spaces and no tabs
+(setq tab-width 4)
 (setq default-tab-width 4)
-
+(setq c-basic-offset 4)
+(setq tab-stop-list ())
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;other;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq default-fill-column 80)
