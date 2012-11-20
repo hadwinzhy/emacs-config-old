@@ -23,7 +23,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;add by Hadwin end ;;;;;;;;;;;;;;;;;;;;
 
 (require 'init-util)
-
+(require 'init-lang)
 
 ;(require 'lang-shell)
 ;(require 'lang-c)
