@@ -7,3 +7,4 @@
 (require 'rc-tabbar)
 
 (require 'rc-cedet-ecb)
+(require 'rc-gtags)
