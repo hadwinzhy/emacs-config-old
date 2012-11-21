@@ -5,3 +5,5 @@
 (require 'rc-ido)  
 (require 'rc-common)
 (require 'rc-tabbar)
+
+(require 'rc-cedet-ecb)
