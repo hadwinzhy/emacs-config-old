@@ -8,3 +8,6 @@
 
 (require 'rc-cedet-ecb)
 (require 'rc-gtags)
+
+(global-set-key [f7] 'recompile)
+(global-set-key [f6] 'compile)

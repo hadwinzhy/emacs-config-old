@@ -1,7 +1,6 @@
-;;;;;;;;;;;;;;;;;;;;;;;CEDET START;;;;;;;;;;;;;;;;;;;;;;;
-;;Download
-;;
-;;;;;;;;;;;;;;;;;;;;;;;CEDET END;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CEDET START;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Download: now i use the cedet inside the emacs
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CEDET END;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'rc-cedet-ecb)
 ;(require 'cedet-devel-load)
 (require 'cedet)
@@ -46,12 +45,15 @@
                         (setq first (cdr (car (cdr alist)))))
                     (semantic-mrub-switch-tags first))))
 
-;;;;;;;;;;;;;;;;;;;;;;;ECB START;;;;;;;;;;;;;;;;;;;;;;;
-;;Download:http://ecb.sourceforge.net/cvs_snapshots/ecb.tar.gz
-;;
-;;;;;;;;;;;;;;;;;;;;;;;ECB END;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;ECB START;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Download:http://ecb.sourceforge.net/cvs_snapshots/ecb.tar.gz
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;ECB END;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq stack-trace-on-error t) ;; to fix bug which can't open
+
 (require 'ecb)
 (require 'ecb-autoloads)
 
