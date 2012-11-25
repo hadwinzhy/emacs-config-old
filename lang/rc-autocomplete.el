@@ -26,6 +26,24 @@
 (ac-config-default)
 (global-auto-complete-mode t)
 
+(setq-default ac-sources '(ac-source-yasnippet 
+                           ac-source-semantic  
+                           ac-source-ropemacs  
+                           ac-source-imenu    
+                           ac-source-words-in-buffer  
+                           ac-source-dictionary  
+                           ac-source-abbrev    
+                           ac-source-words-in-buffer    
+                           ac-source-files-in-current-dir    
+                           ac-source-filename))   
+(add-hook 'emacs-lisp-mode-hook    (lambda () (add-to-list 'ac-sources 'ac-source-symbols)))  
+(add-hook 'auto-complete-mode-hook (lambda () (add-to-list 'ac-sources 'ac-source-filename)))  
+
+
+(add-hook 'python-mode-hook        (lambda () (add-to-list 'ac-omni-completion-sources (cons "\\." '(ac-source-ropemacs)))  ))    
+
+(setq ac-auto-start 2)
+(setq ac-dwim t)
 ;; trigger using TAB and disable auto start
 ;(custom-set-variables
 ; '(ac-trigger-key "TAB")
