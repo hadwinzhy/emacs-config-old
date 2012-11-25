@@ -15,10 +15,24 @@
 ;(global-set-key (kbd "C-x C-M-f") 'find-file-in-project)
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;é€šç”¨è®¾ç½®;;;;;;;;;;;;;;;;;;;;;;;;
-(set-language-environment 'utf-8)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Í¨ÓÃÉèÖÃ;;;;;;;;;;;;;;;;;;;;;;;;
+;(set-language-environment 'utf-8)
 (set-keyboard-coding-system 'utf-8)   ; input
 (set-selection-coding-system 'utf-8)  ; copy/paste
+(set-language-environment 'Chinese-GB) 
+(set-keyboard-coding-system 'euc-cn) 
+(set-clipboard-coding-system 'euc-cn) 
+(set-clipboard-coding-system 'cn-gb-2312) 
+(set-terminal-coding-system 'euc-cn) 
+(set-buffer-file-coding-system 'euc-cn) 
+(set-selection-coding-system 'euc-cn) 
+(set-selection-coding-system 'cn-gb-2312) 
+(set-default-coding-systems 'euc-cn) 
+(setq locale-coding-system 'euc-cn) 
+(modify-coding-system-alist 'process "*" 'euc-cn) 
+(setq default-process-coding-system 
+'(euc-cn . euc-cn)) 
+(setq-default pathname-coding-system 'euc-cn)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;backup theory;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq make-backup-files nil)
@@ -51,11 +65,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;other;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq default-fill-column 80)
-;;è®¾ç½®ç¼ºçœæ¨¡å¼æ˜¯textï¼Œè€Œä¸æ˜¯åŸºæœ¬æ¨¡å¼
+;;ÉèÖÃÈ±Ê¡Ä£Ê½ÊÇtext£¬¶ø²»ÊÇ»ù±¾Ä£Ê½
 (setq default-major-mode 'text-mode)
-(global-font-lock-mode t);è¯­æ³•é«˜äº®
-(auto-image-file-mode t);æ‰“å¼€å›¾ç‰‡æ˜¾ç¤ºåŠŸèƒ½
-(fset 'yes-or-no-p 'y-or-n-p);ä»¥ y/nä»£è¡¨ yes/noï¼Œå¯èƒ½ä½ è§‰å¾—ä¸éœ€è¦ï¼Œå‘µå‘µã€‚
-(setq mouse-yank-at-point t);æ”¯æŒä¸­é”®ç²˜è´´
-(setq x-select-enable-clipboard t);æ”¯æŒemacså’Œå¤–éƒ¨ç¨‹åºçš„ç²˜è´´
+(global-font-lock-mode t);Óï·¨¸ßÁÁ
+(auto-image-file-mode t);´ò¿ªÍ¼Æ¬ÏÔÊ¾¹¦ÄÜ
+(fset 'yes-or-no-p 'y-or-n-p);ÒÔ y/n´ú±í yes/no£¬¿ÉÄÜÄã¾õµÃ²»ĞèÒª£¬ºÇºÇ¡£
+(setq mouse-yank-at-point t);Ö§³ÖÖĞ¼üÕ³Ìù
+(setq x-select-enable-clipboard t);Ö§³ÖemacsºÍÍâ²¿³ÌĞòµÄÕ³Ìù
 
