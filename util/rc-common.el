@@ -20,19 +20,19 @@
 (set-keyboard-coding-system 'utf-8)   ; input
 (set-selection-coding-system 'utf-8)  ; copy/paste
 (set-language-environment 'Chinese-GB) 
-(set-keyboard-coding-system 'euc-cn) 
-(set-clipboard-coding-system 'euc-cn) 
-(set-clipboard-coding-system 'cn-gb-2312) 
-(set-terminal-coding-system 'euc-cn) 
-(set-buffer-file-coding-system 'euc-cn) 
-(set-selection-coding-system 'euc-cn) 
-(set-selection-coding-system 'cn-gb-2312) 
-(set-default-coding-systems 'euc-cn) 
-(setq locale-coding-system 'euc-cn) 
-(modify-coding-system-alist 'process "*" 'euc-cn) 
-(setq default-process-coding-system 
-'(euc-cn . euc-cn)) 
-(setq-default pathname-coding-system 'euc-cn)
+;(set-keyboard-coding-system 'euc-cn) 
+;(set-clipboard-coding-system 'euc-cn) 
+;(set-clipboard-coding-system 'cn-gb-2312) 
+;(set-terminal-coding-system 'euc-cn) 
+;(set-buffer-file-coding-system 'euc-cn) 
+;(set-selection-coding-system 'euc-cn) 
+;(set-selection-coding-system 'cn-gb-2312) 
+;(set-default-coding-systems 'euc-cn) 
+;(setq locale-coding-system 'euc-cn) 
+;(modify-coding-system-alist 'process "*" 'euc-cn) 
+;(setq default-process-coding-system 
+;'(euc-cn . euc-cn)) 
+;(setq-default pathname-coding-system 'euc-cn)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;backup theory;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq make-backup-files nil)
