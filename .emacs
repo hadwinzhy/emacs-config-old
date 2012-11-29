@@ -2,6 +2,9 @@
 ;;try to load all config file under the base folder and subfolder, 
 ;;now we just support three level folder
 
+(defvar basePath "/local/github/emacs-config"
+  "the basePath of .emacs.d")
+
 (defun scanfolder(base)
   (add-to-list 'load-path base)
   (dolist (f (directory-files base))
@@ -12,13 +15,12 @@
         (add-to-list 'load-path name)))))
 
 ;;;please change the base folder name here
-(let ((base "/local/github/emacs-config"))
-  (dolist (f (directory-files base))
-    (let ((name (concat base "/" f)))
-      (when (and (file-directory-p name) 
-		 (not (equal f ".."))
-                 (not (equal f ".")))
-	(scanfolder name)))))
+(dolist (f (directory-files basePath))
+  (let ((name (concat basePath "/" f)))
+    (when (and (file-directory-p name) 
+               (not (equal f ".."))
+               (not (equal f ".")))
+      (scanfolder name))))
 
 ;;;;;;;;;;;;;;;;;;;;;;add by Hadwin end ;;;;;;;;;;;;;;;;;;;;
 

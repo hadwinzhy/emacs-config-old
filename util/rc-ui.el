@@ -14,10 +14,12 @@
 ;;Local: /root/3rd-party/color-theme/color-theme-railscasts.git
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Color Theme End;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'color-theme)
-(load "color-theme-railscasts.el")
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-railscasts)))
+(setq custom-theme-load-path  (cons (concat basePath "/3rd-party/color-theme/") custom-theme-load-path))
+(load-theme 'solarized-dark t)
+;(load "color-theme-railscasts.el")
+;(eval-after-load "color-theme"
+;  '(progn
+;     (color-theme-railscasts)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UI Config Start;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq inhibit-startup-message t)  ; 取消开机画面

@@ -22,7 +22,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;AutoComplete;;;;;;;;;;;;;;;;;;;;;;;
 ;(add-to-list 'load-path "/usr/share/emacs/site-lisp/auto-complete")
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "/local/github/emacs-config/3rd-party/auto-complete/dict")
+(add-to-list 'ac-dictionary-directories (concat basePath  "/3rd-party/auto-complete/dict"))
 (ac-config-default)
 (global-auto-complete-mode t)
 
