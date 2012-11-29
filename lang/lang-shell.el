@@ -12,12 +12,23 @@
 ; '(session-use-package t nil (session)
 )
 
-
-
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
-;; for apt-get and other 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Bash AutoComplete Start;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(autoload 'bash-completion-dynamic-complete 
+  "bash-completion"
+  "BASH completion hook")
+(add-hook 'shell-dynamic-complete-functions
+  'bash-completion-dynamic-complete)
+(add-hook 'shell-command-complete-functions
+  'bash-completion-dynamic-complete)
+
+;; for apt-get
 (require 'shell-completion)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Bash AutoComplete End;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 ;;for multi shell 
 (defun my-shell-mode-auto-rename-buffer (text)
