@@ -1253,6 +1253,14 @@ as the alt text of the image."
   (insert "()")
   (backward-char 1))
 
+(defun markdown-insert-photo ()
+  "Insert an inline image tag of the form {% photo foobar.jpg default My cool photo %}
+If Transient Mark mode is on and a region is active, it is used
+as the alt text of the image."
+  (interactive) 
+  (markdown-wrap-or-insert "{% photo " "orig thumb name %}")
+  (backward-char 17))
+
 (defun markdown-insert-header-1 ()
   "Insert a first level atx-style (hash mark) header.
 If Transient Mark mode is on and a region is active, it is used
@@ -1601,6 +1609,7 @@ it in the usual way."
     (define-key map "\C-c\C-ar" 'markdown-insert-reference-link-dwim)
     (define-key map "\C-c\C-aw" 'markdown-insert-wiki-link)
     (define-key map "\C-c\C-ii" 'markdown-insert-image)
+    (define-key map "\C-c\C-ip" 'markdown-insert-photo)
     (define-key map "\C-c\C-t1" 'markdown-insert-header-1)
     (define-key map "\C-c\C-t2" 'markdown-insert-header-2)
     (define-key map "\C-c\C-t3" 'markdown-insert-header-3)
