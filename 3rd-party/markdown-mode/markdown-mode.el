@@ -1185,6 +1185,17 @@ as inline code."
   (markdown-wrap-or-insert "`" "`")
   (backward-char 1))
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"add by Hadwin" start
+(defun markdown-insert-code-block ()
+  "to match the octopress code block"
+  (interactive)
+  (markdown-wrap-or-insert "{% codeblock" " lang:% }")
+  (insert "\n{% endcodeblock%}")
+  (backward-char 20))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;add by Hadwin end 
+
+
 (defun markdown-insert-link ()
   "Insert an inline link of the form []().
 If Transient Mark mode is on and a region is active, it is used
@@ -1253,6 +1264,7 @@ as the alt text of the image."
   (insert "()")
   (backward-char 1))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"add by Hadwin" start
 (defun markdown-insert-photo ()
   "Insert an inline image tag of the form {% photo foobar.jpg default My cool photo %}
 If Transient Mark mode is on and a region is active, it is used
@@ -1260,6 +1272,7 @@ as the alt text of the image."
   (interactive) 
   (markdown-wrap-or-insert "{% photo " "orig thumb name %}")
   (backward-char 17))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"add by Hadwin" end
 
 (defun markdown-insert-header-1 ()
   "Insert a first level atx-style (hash mark) header.
@@ -1606,6 +1619,7 @@ it in the usual way."
   (let ((map (make-keymap)))
     ;; Element insertion
     (define-key map "\C-c\C-al" 'markdown-insert-link)
+    (define-key map "\C-c\C-ac" 'markdown-insert-code-block)
     (define-key map "\C-c\C-ar" 'markdown-insert-reference-link-dwim)
     (define-key map "\C-c\C-aw" 'markdown-insert-wiki-link)
     (define-key map "\C-c\C-ii" 'markdown-insert-image)
