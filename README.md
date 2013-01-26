@@ -9,8 +9,11 @@ Before install emacs:
 
 	* `sudo apt-get install emacs`
 
-	* `sudo apt-get install ttf-inconsolata`
+   	* `sudo apt-get install ttf-inconsolata`
+    
+    * `sudo apt-get install global`
 
 	* cd 3rd-party/pymacs/  && make && sudo make install
 
 	* sudo mv 3rd-party/pycomplete/pycomplete.py /usr/local/lib/python2.7/dist-packages/ 
+    

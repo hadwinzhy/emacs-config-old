@@ -62,6 +62,12 @@
 (setq default-tab-width 4)
 (setq c-basic-offset 4)
 (setq tab-stop-list ())
+;;;; ¸÷´°¿Ú¼äÇÐ»» 
+(global-set-key [C-left] 'windmove-left)
+(global-set-key [C-right] 'windmove-right)
+(global-set-key [C-up] 'windmove-up)
+(global-set-key [C-down] 'windmove-down)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;other;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq default-fill-column 80)
