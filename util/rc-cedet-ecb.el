@@ -58,6 +58,7 @@
 (setq cedet-sys-include-dirs 
       (list
        "/usr/include"
+       "/usr/include/x86_64-linux-gnu"
        "/usr/include/bits"
        "/usr/include/glib-2.0"
        "/usr/include/gnu"
@@ -124,14 +125,14 @@
   "description"
   ;; Semantic functions.
   (semantic-default-c-setup)
-  (local-set-key "/C-c?" 'semantic-ia-complete-symbol-menu)
-  (local-set-key "/C-cb" 'semantic-mrub-switch-tags)
-  (local-set-key "/C-cR" 'semantic-symref)
-  (local-set-key "/C-cj" 'semantic-ia-fast-jump)
-  (local-set-key "/C-cp" 'semantic-ia-show-summary)
-  (local-set-key "/C-cl" 'semantic-ia-show-doc)
-  (local-set-key "/C-cr" 'semantic-symref-symbol)
-  (local-set-key "/C-c/" 'semantic-ia-complete-symbol)
+;  (local-set-key "/C-c?" 'semantic-ia-complete-symbol-menu)
+;  (local-set-key "/C-cb" 'semantic-mrub-switch-tags)
+;  (local-set-key "/C-cR" 'semantic-symref)
+;  (local-set-key "/C-cj" 'semantic-ia-fast-jump)
+;  (local-set-key "/C-cp" 'semantic-ia-show-summary)
+;  (local-set-key "/C-cl" 'semantic-ia-show-doc)
+;  (local-set-key "/C-cr" 'semantic-symref-symbol)
+;  (local-set-key "/C-c/" 'semantic-ia-complete-symbol)
   (local-set-key [(control return)] 'semantic-ia-complete-symbol)
   (local-set-key "." 'semantic-complete-self-insert)
   (local-set-key ">" 'semantic-complete-self-insert)
