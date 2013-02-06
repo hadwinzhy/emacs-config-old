@@ -19,7 +19,7 @@
 ;(set-language-environment 'utf-8)
 (set-keyboard-coding-system 'utf-8)   ; input
 (set-selection-coding-system 'utf-8)  ; copy/paste
-(set-language-environment 'Chinese-GB) 
+;(set-language-environment 'Chinese-GB) 
 ;(set-keyboard-coding-system 'euc-cn) 
 ;(set-clipboard-coding-system 'euc-cn) 
 ;(set-clipboard-coding-system 'cn-gb-2312) 
