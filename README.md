@@ -13,7 +13,7 @@ Before install emacs:
     
     * `sudo apt-get install global`
 
-	* cd 3rd-party/pymacs/  && make && sudo make install
+	* cd 3rd-party/pymacs/  &&  sudo python setup.py install
 
-	* sudo mv 3rd-party/pycomplete/pycomplete.py /usr/local/lib/python2.7/dist-packages/ 
+	* sudo cp 3rd-party/pycomplete/pycomplete.py /usr/local/lib/python2.7/dist-packages/ 
     
