@@ -1,10 +1,10 @@
-(provide 'rc-ui)
+﻿(provide 'rc-ui)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Font Start;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;Download: sudo apt-get install fonts-inconsolata
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Font End;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(set-default-font "-unknown-Inconsolata-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1")
+(set-default-font "-unknown-Inconsolata-normal-normal-normal-*-17-*-*-*-m-0-iso10646-1")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Color Theme Start;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;Download: http://download.savannah.gnu.org/releases/color-theme/color-theme.el.gz
@@ -42,25 +42,26 @@
 (mouse-avoidance-mode 'animate);光标靠近鼠标指针时，让鼠标指针自动让开，别挡住视线
 
 
+;;removed for windows
 ;启动最大化
-(defun my-maximized-horz ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
-(defun my-maximized-vert ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
-(defun my-maximized ()
- (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
- (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
-(my-maximized)
+;(defun my-maximized-horz ()
+;  (interactive)
+;  (x-send-client-message
+;   nil 0 nil "_NET_WM_STATE" 32
+;   '(1 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
+;(defun my-maximized-vert ()
+;  (interactive)
+;  (x-send-client-message
+;   nil 0 nil "_NET_WM_STATE" 32
+;   '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
+;(defun my-maximized ()
+; (interactive)
+;  (x-send-client-message
+;   nil 0 nil "_NET_WM_STATE" 32
+;   '(1 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
+; (interactive)
+;  (x-send-client-message
+;   nil 0 nil "_NET_WM_STATE" 32
+;  '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
+;(my-maximized)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UI Config End;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

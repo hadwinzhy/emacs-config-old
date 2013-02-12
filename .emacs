@@ -2,7 +2,7 @@
 ;;try to load all config file under the base folder and subfolder, 
 ;;now we just support three level folder
 
-(defvar basePath "/local/code/github/emacs-config"
+(defvar basePath "F:/emacs-config"
   "the basePath of .emacs.d")
 
 (defun scanfolder(base)

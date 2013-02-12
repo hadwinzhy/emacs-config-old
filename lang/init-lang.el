@@ -2,7 +2,8 @@
 
 (require 'rc-autocomplete)
 (require 'lang-shell)
-(require 'lang-python)
+;;remove for windows
+;(require 'lang-python)
 (require 'lang-markdown)
 
 
