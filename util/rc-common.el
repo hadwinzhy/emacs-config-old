@@ -1,3 +1,4 @@
+
 (provide 'rc-common)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;Highlight Start;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -16,9 +17,22 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Õ®”√…Ë÷√;;;;;;;;;;;;;;;;;;;;;;;;
+(prefer-coding-system 'utf-8)
+(setq file-name-coding-system 'gbk)
+(set-terminal-coding-system 'gbk)
+(set-keyboard-coding-system 'gbk)
+(setq locale-coding-system 'gbk)
+(set-selection-coding-system 'gbk)
+(set-clipboard-coding-system 'ctext)
+(set-clipboard-coding-system 'gbk)
+(set-terminal-coding-system 'gbk)
+(set-buffer-file-coding-system 'gbk)
+(modify-coding-system-alist 'process "." 'gbk)
+(setq default-process-coding-system '(gbk . gbk))
+
 ;(set-language-environment 'utf-8)
-(set-keyboard-coding-system 'utf-8)   ; input
-(set-selection-coding-system 'utf-8)  ; copy/paste
+;(set-keyboard-coding-system 'utf-8)   ; input
+;(set-selection-coding-system 'utf-8)  ; copy/paste
 ;(set-language-environment 'Chinese-GB) 
 ;(set-keyboard-coding-system 'euc-cn) 
 ;(set-clipboard-coding-system 'euc-cn) 
