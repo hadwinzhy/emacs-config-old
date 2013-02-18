@@ -35,8 +35,8 @@
 (setq display-time-24hr-format t)
 (setq display-time-day-and-date t)
 
-(setq tool-bar-mode nil);去掉工具栏
-
+(tool-bar-mode -1);去掉工具栏
+(menu-bar-mode nil);
 
 (scroll-bar-mode nil);去掉滚动条，因为可以使用鼠标滚轮了 ^_^
 (mouse-avoidance-mode 'animate);光标靠近鼠标指针时，让鼠标指针自动让开，别挡住视线
