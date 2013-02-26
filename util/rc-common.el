@@ -18,17 +18,17 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Õ®”√…Ë÷√;;;;;;;;;;;;;;;;;;;;;;;;
 (prefer-coding-system 'utf-8)
-(setq file-name-coding-system 'gbk)
-(set-terminal-coding-system 'gbk)
-(set-keyboard-coding-system 'gbk)
-(setq locale-coding-system 'gbk)
-(set-selection-coding-system 'gbk)
-(set-clipboard-coding-system 'ctext)
-(set-clipboard-coding-system 'gbk)
-(set-terminal-coding-system 'gbk)
-(set-buffer-file-coding-system 'gbk)
-(modify-coding-system-alist 'process "." 'gbk)
-(setq default-process-coding-system '(gbk . gbk))
+;(setq file-name-coding-system 'gbk)
+;(set-terminal-coding-system 'gbk)
+;(set-keyboard-coding-system 'gbk)
+;(setq locale-coding-system 'gbk)
+;(set-selection-coding-system 'gbk)
+;(set-clipboard-coding-system 'ctext)
+;(set-clipboard-coding-system 'gbk)
+;(set-terminal-coding-system 'gbk)
+;(set-buffer-file-coding-system 'gbk)
+;(modify-coding-system-alist 'process "." 'gbk)
+;(setq default-process-coding-system '(gbk . gbk))
 
 ;(set-language-environment 'utf-8)
 ;(set-keyboard-coding-system 'utf-8)   ; input
