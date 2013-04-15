@@ -5,5 +5,5 @@
 (require 'lang-shell)
 (require 'lang-python)
 (require 'lang-markdown)
-
+(require 'lang-go)
 
