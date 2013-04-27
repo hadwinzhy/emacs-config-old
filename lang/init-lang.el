@@ -6,4 +6,5 @@
 (require 'lang-python)
 (require 'lang-markdown)
 (require 'lang-go)
-
+(require 'lang-orgmode)
+(require 'lang-haml)
