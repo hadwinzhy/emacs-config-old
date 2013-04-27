@@ -1190,8 +1190,8 @@ as inline code."
 (defun markdown-insert-code-block ()
   "to match the octopress code block"
   (interactive)
-  (markdown-wrap-or-insert "{% codeblock" " lang:% }")
-  (insert "\n{% endcodeblock%}")
+  (markdown-wrap-or-insert "{% codeblock" " lang: %}")
+  (insert "\n{% endcodeblock %}")
   (backward-char 20))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;add by Hadwin end 
 
