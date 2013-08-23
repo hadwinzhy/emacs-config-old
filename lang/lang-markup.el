@@ -4,4 +4,7 @@
                  (setq indent-tabs-mode nil)
                  (define-key haml-mode-map "\C-m" 'newline-and-indent)))
 
-(provide 'lang-haml)
+(require 'yaml-mode)
+    (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+(provide 'lang-markup)

@@ -7,4 +7,4 @@
 (require 'lang-markdown)
 (require 'lang-go)
 (require 'lang-orgmode)
-(require 'lang-haml)
+(require 'lang-markup)
