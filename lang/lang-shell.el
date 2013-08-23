@@ -15,7 +15,10 @@
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Bash AutoComplete Start;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; for apt-get
+;(require 'shell-completion)
 
+(require 'bash-completion)
 (autoload 'bash-completion-dynamic-complete 
   "bash-completion"
   "BASH completion hook")
@@ -23,10 +26,6 @@
   'bash-completion-dynamic-complete)
 (add-hook 'shell-command-complete-functions
   'bash-completion-dynamic-complete)
-
-;; for apt-get
-(require 'shell-completion)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Bash AutoComplete End;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
