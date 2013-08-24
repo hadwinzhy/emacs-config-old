@@ -5,17 +5,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Font End;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (set-default-font "-unknown-Inconsolata-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1")
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Color Theme Start;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;Download: http://download.savannah.gnu.org/releases/color-theme/color-theme.el.gz
-;;Local: /root/3rd-party/color-theme/color-theme.el
-;;Railscasts.el:
-;;Download: https://github.com/olegshaldybin/color-theme-railscasts.git
-;;Local: /root/3rd-party/color-theme/color-theme-railscasts.git
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Color Theme End;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'color-theme)
-(setq custom-theme-load-path  (cons (concat basePath "/3rd-party/color-theme/") custom-theme-load-path))
-(load-theme 'solarized-dark t)
+(load "color-theme-molokai.el")
+(color-theme-molokai)
+;(load-theme 'solarized-dark t)
 ;(load "color-theme-railscasts.el")
 ;(eval-after-load "color-theme"
 ;  '(progn

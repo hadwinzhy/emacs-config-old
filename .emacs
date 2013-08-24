@@ -1,5 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;add by Hadwin start;;;;;;;;;;;;;;;;;;;
-;;try to load all config file under the base folder and subfolder, 
+;;try to load all config file under the base folder and subfolder,
 ;;now we just support three level folder
 
 (defvar basePath "/local/code/config/emacs"
@@ -9,15 +9,15 @@
   (add-to-list 'load-path base)
   (dolist (f (directory-files base))
     (let ((name (concat base "/" f)))
-      (when (and (file-directory-p name) 
-		 (not (equal f ".."))
+      (when (and (file-directory-p name)
+                 (not (equal f ".."))
                  (not (equal f ".")))
         (add-to-list 'load-path name)))))
 
 ;;;please change the base folder name here
 (dolist (f (directory-files basePath))
   (let ((name (concat basePath "/" f)))
-    (when (and (file-directory-p name) 
+    (when (and (file-directory-p name)
                (not (equal f ".."))
                (not (equal f ".")))
       (scanfolder name))))
@@ -26,22 +26,6 @@
 
 (require 'init-util)
 (require 'init-lang)
-
-;(require 'lang-shell)
-;(require 'lang-c)
-;(require 'lang-c)
-;(load "rc-gnus.el")
-;(require 'rc-autocomplete)
-;(load "rc-cedet.el")
-;(load "lang-tex.el")
-;(load "lang-c.el")
-;(load "lang-java.el")
-;(load "lang-objc.el")
-;(load "lang-python.el")
-;(load "rc-key.el")
-
-
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
