@@ -3,7 +3,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;Highlight Start;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;Download http://nschum.de/src/emacs/highlight-symbol/
-;;Usage: Use C-f3 to toggle highlighting of the symbol at point throughout the current buffer. 
+;;Usage: Use C-f3 to toggle highlighting of the symbol at point throughout the current buffer.
 ;;Use highlight-symbol-mode to keep the symbol at point always highlighted.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;Highlight End;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'highlight-symbol)
@@ -16,39 +16,9 @@
 ;(global-set-key (kbd "C-x C-M-f") 'find-file-in-project)
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Í¨ÓÃÉèÖÃ;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;ÃÂ¨Ã“ÃƒÃ‰Ã¨Ã–Ãƒ;;;;;;;;;;;;;;;;;;;;;;;;
 (prefer-coding-system 'utf-8)
-;(setq file-name-coding-system 'gbk)
-;(set-terminal-coding-system 'gbk)
-;(set-keyboard-coding-system 'gbk)
-;(setq locale-coding-system 'gbk)
-;(set-selection-coding-system 'gbk)
-;(set-clipboard-coding-system 'ctext)
-;(set-clipboard-coding-system 'gbk)
-;(set-terminal-coding-system 'gbk)
-;(set-buffer-file-coding-system 'gbk)
-;(modify-coding-system-alist 'process "." 'gbk)
-;(setq default-process-coding-system '(gbk . gbk))
 
-;(set-language-environment 'utf-8)
-;(set-keyboard-coding-system 'utf-8)   ; input
-;(set-selection-coding-system 'utf-8)  ; copy/paste
-;(set-language-environment 'Chinese-GB) 
-;(set-keyboard-coding-system 'euc-cn) 
-;(set-clipboard-coding-system 'euc-cn) 
-;(set-clipboard-coding-system 'cn-gb-2312) 
-;(set-terminal-coding-system 'euc-cn) 
-;(set-buffer-file-coding-system 'euc-cn) 
-;(set-selection-coding-system 'euc-cn) 
-;(set-selection-coding-system 'cn-gb-2312) 
-;(set-default-coding-systems 'euc-cn) 
-;(setq locale-coding-system 'euc-cn) 
-;(modify-coding-system-alist 'process "*" 'euc-cn) 
-;(setq default-process-coding-system 
-;'(euc-cn . euc-cn)) 
-;(setq-default pathname-coding-system 'euc-cn)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;backup theory;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
@@ -68,7 +38,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;key;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key "\C-l" 'goto-line)
-;; use f5 to delete other windows, simpler than C-x 1 
+;; use f5 to delete other windows, simpler than C-x 1
 (global-set-key [f5] 'delete-other-windows)
 
 (setq-default indent-tabs-mode nil)    ; use only spaces and no tabs
@@ -76,20 +46,36 @@
 (setq default-tab-width 4)
 (setq c-basic-offset 4)
 (setq tab-stop-list ())
-;;;; ¸÷´°¿Ú¼äÇĞ»» 
+;;;; Â¸Ã·Â´Â°Â¿ÃšÂ¼Ã¤Ã‡ÃÂ»Â»
 (global-set-key [C-left] 'windmove-left)
 (global-set-key [C-right] 'windmove-right)
 (global-set-key [C-up] 'windmove-up)
 (global-set-key [C-down] 'windmove-down)
+(defun increase-font-size ()
+  (interactive)
+  (set-face-attribute 'default
+                       nil
+                       :height
+                       (ceiling (* 1.10
+                                   (face-attribute 'default :height)))))
+(defun decrease-font-size ()
+  (interactive)
+  (set-face-attribute 'default
+                       nil
+                       :height
+                       (floor (* 0.9
+                                 (face-attribute 'default :height)))))
+(global-set-key (kbd "C-=") 'increase-font-size)
+(global-set-key (kbd "C--")  'decrease-font-size)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;other;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq default-fill-column 80)
-;;ÉèÖÃÈ±Ê¡Ä£Ê½ÊÇtext£¬¶ø²»ÊÇ»ù±¾Ä£Ê½
+;;Ã‰Ã¨Ã–ÃƒÃˆÂ±ÃŠÂ¡Ã„Â£ÃŠÂ½ÃŠÃ‡textÂ£Â¬Â¶Ã¸Â²Â»ÃŠÃ‡Â»Ã¹Â±Â¾Ã„Â£ÃŠÂ½
 (setq default-major-mode 'text-mode)
-(global-font-lock-mode t);Óï·¨¸ßÁÁ
-(auto-image-file-mode t);´ò¿ªÍ¼Æ¬ÏÔÊ¾¹¦ÄÜ
-(fset 'yes-or-no-p 'y-or-n-p);ÒÔ y/n´ú±í yes/no£¬¿ÉÄÜÄã¾õµÃ²»ĞèÒª£¬ºÇºÇ¡£
-(setq mouse-yank-at-point t);Ö§³ÖÖĞ¼üÕ³Ìù
-(setq x-select-enable-clipboard t);Ö§³ÖemacsºÍÍâ²¿³ÌĞòµÄÕ³Ìù
-
+(global-font-lock-mode t);Ã“Ã¯Â·Â¨Â¸ÃŸÃÃ
+(auto-image-file-mode t);Â´Ã²Â¿ÂªÃÂ¼Ã†Â¬ÃÃ”ÃŠÂ¾Â¹Â¦Ã„Ãœ
+(fset 'yes-or-no-p 'y-or-n-p);Ã’Ã” y/nÂ´ÃºÂ±Ã­ yes/noÂ£Â¬Â¿Ã‰Ã„ÃœÃ„Ã£Â¾ÃµÂµÃƒÂ²Â»ÃÃ¨Ã’ÂªÂ£Â¬ÂºÃ‡ÂºÃ‡Â¡Â£
+(setq mouse-yank-at-point t);Ã–Â§Â³Ã–Ã–ÃÂ¼Ã¼Ã•Â³ÃŒÃ¹
+(setq x-select-enable-clipboard t);Ã–Â§Â³Ã–emacsÂºÃÃÃ¢Â²Â¿Â³ÃŒÃÃ²ÂµÃ„Ã•Â³ÃŒÃ¹
