@@ -1,4 +1,3 @@
-
 (provide 'rc-common)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;Highlight Start;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -79,3 +78,5 @@
 (fset 'yes-or-no-p 'y-or-n-p);ÒÔ y/n´ú±í yes/no£¬¿ÉÄÜÄã¾õµÃ²»ÐèÒª£¬ºÇºÇ¡£
 (setq mouse-yank-at-point t);Ö§³ÖÖÐ¼üÕ³Ìù
 (setq x-select-enable-clipboard t);Ö§³ÖemacsºÍÍâ²¿³ÌÐòµÄÕ³Ìù
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
