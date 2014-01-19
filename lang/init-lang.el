@@ -9,3 +9,4 @@
 (require 'lang-go)
 (require 'lang-orgmode)
 (require 'lang-markup)
+(require 'lang-git)
