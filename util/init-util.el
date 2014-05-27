@@ -2,6 +2,7 @@
 (provide 'init-util)
 
 (require 'rc-ui)
+(require 'rc-dired)
 (require 'rc-ido)  
 (require 'rc-common)
 (require 'rc-tabbar)
