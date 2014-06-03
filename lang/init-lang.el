@@ -11,3 +11,4 @@
 (require 'lang-markup)
 (require 'lang-git)
 (require 'lang-coffee)
+(require 'lang-css)
