@@ -7,3 +7,6 @@
 [submodule "3rd-party/haml-mode"]
 	path = 3rd-party/haml-mode
 	url = https://github.com/nex3/haml-mode.git
+[submodule "3rd-party/tabbar"]
+	path = 3rd-party/tabbar
+	url = https://github.com/dholm/tabbar.git
