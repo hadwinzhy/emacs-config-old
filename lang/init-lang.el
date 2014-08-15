@@ -3,6 +3,7 @@
 (require 'rc-autocomplete)
 (require 'lang-common)
 (require 'lang-c)
+(require 'lang-ruby)
 (require 'lang-shell)
 ;(require 'lang-python)
 (require 'lang-markdown)
