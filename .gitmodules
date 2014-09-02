@@ -10,3 +10,6 @@
 [submodule "3rd-party/tabbar"]
 	path = 3rd-party/tabbar
 	url = https://github.com/dholm/tabbar.git
+[submodule "3rd-party/coffee-mode"]
+	path = 3rd-party/coffee-mode
+	url = https://github.com/defunkt/coffee-mode.git
