@@ -13,3 +13,6 @@
 [submodule "3rd-party/coffee-mode"]
 	path = 3rd-party/coffee-mode
 	url = https://github.com/defunkt/coffee-mode.git
+[submodule "3rd-party/less-mode"]
+	path = 3rd-party/less-mode
+	url = https://github.com/purcell/less-css-mode
