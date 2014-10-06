@@ -1,0 +1,6 @@
+#contributor : Hadwin Zheng <hadwinzhy@gmail.com>
+#name : { ... }
+# --
+"$1": {
+  $2
+},
