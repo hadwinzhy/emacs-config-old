@@ -13,3 +13,4 @@
 (require 'lang-git)
 (require 'lang-coffee)
 (require 'lang-css)
+(require 'lang-others)
