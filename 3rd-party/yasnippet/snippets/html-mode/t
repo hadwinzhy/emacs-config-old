@@ -1,5 +1,5 @@
-# contributor: Rodrigo Setti <rodrigosetti@gmail.com>
+# contributor: Rodrigo Setti <rodrigosetti@gmail.com>i
 # name: {{ '' | translate }}
 # key: t
 # --
-{{ "" | translate }}
+{{ "$1" | translate }}
