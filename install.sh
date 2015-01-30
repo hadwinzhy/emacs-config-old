@@ -1,7 +1,10 @@
 #!/bin/sh
 
+git submodule init
+git submodule update
+
 #install essential package
-sudo apt-get install ttf-inconsolata
+sudo apt-get install fonts-inconsolata
 
 sudo apt-get install global
 
@@ -11,3 +14,5 @@ cd 3rd-party/pymacs/ && sudo python setup.py install
 cd -
 
 sudo cp 3rd-party/pycomplete/pycomplete.py /usr/local/lib/python2.7/dist-packages/
+
+sudo ln -svf $(pwd)/.emacs ~/
