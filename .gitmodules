@@ -16,3 +16,6 @@
 [submodule "3rd-party/less-mode"]
 	path = 3rd-party/less-mode
 	url = https://github.com/purcell/less-css-mode
+[submodule "3rd-party/rubocop-emacs"]
+	path = 3rd-party/rubocop-emacs
+	url = git@github.com:bbatsov/rubocop-emacs.git

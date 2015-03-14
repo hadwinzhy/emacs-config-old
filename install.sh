@@ -8,6 +8,8 @@ sudo apt-get install fonts-inconsolata
 
 sudo apt-get install global
 
+gem install rubocop
+
 # install pymacs
 cd 3rd-party/pymacs/ && sudo python setup.py install
 

@@ -15,4 +15,9 @@
 
 (ruby-mode-hook)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;; rubocop
+
+(add-hook 'ruby-mode-hook 'rubocop-mode)
+(require 'rubocop)
+
 (provide 'lang-ruby)
