@@ -19,3 +19,9 @@
 [submodule "3rd-party/rubocop-emacs"]
 	path = 3rd-party/rubocop-emacs
 	url = git@github.com:bbatsov/rubocop-emacs.git
+[submodule "3rd-party/rvm.el"]
+	path = 3rd-party/rvm.el
+	url = git@github.com:senny/rvm.el.git
+[submodule "3rd-party/inf-ruby"]
+	path = 3rd-party/inf-ruby
+	url = git@github.com:nonsequitur/inf-ruby.git
