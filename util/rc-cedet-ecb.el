@@ -8,7 +8,7 @@
 ;;;;  Helper tools.
 
 (custom-set-variables
- 
+
  '(semantic-default-submodes (quote ( )))
 
  '(semantic-idle-scheduler-idle-time 3))
@@ -22,7 +22,7 @@
 (global-semantic-mru-bookmark-mode 1)
 
 ;;enables global support for Semanticdb;
-(global-semanticdb-minor-mode 1)   
+(global-semanticdb-minor-mode 1)
 
 ;;activates highlighting of first line for current tag (function, class, etc.);
 (global-semantic-highlight-func-mode 1)
@@ -55,7 +55,7 @@
   (list ".." "../include" "../inc" "../common" "../public" "."
         "../.." "../../include" "../../inc" "../../common" "../../public"))
 
-(setq cedet-sys-include-dirs 
+(setq cedet-sys-include-dirs
       (list
        "/usr/include"
        "/usr/include/x86_64-linux-gnu"
@@ -69,7 +69,7 @@
        "/usr/local/include"))
 
 
-(let 
+(let
   ((include-dirs cedet-user-include-dirs))
   (setq include-dirs (append include-dirs cedet-sys-include-dirs))
   (mapc (lambda (dir)
@@ -160,7 +160,7 @@
   (local-set-key  [(tab)] 'indent-or-complete))
 
 
-;; try to fix bug 
+;; try to fix bug
 ;;"Symbol's function definition is void: semantic-analyze-tag-references"
 (require 'semantic/analyze/refs)
 
@@ -173,7 +173,7 @@
     (semantic-ia-fast-jump (point))))
 
 (global-set-key [f12] 'semantic-ia-fast-jump-or-back)
-(global-set-key [S-f12] 
+(global-set-key [S-f12]
                 (lambda ()
                   (interactive)
                   (if (ring-empty-p (oref semantic-mru-bookmark-ring ring))
@@ -193,7 +193,7 @@
 
 (require 'ecb)
 (require 'ecb-autoloads)
-
+(setq ecb-version-check nil)
 (setq ecb-tip-of-the-day nil) ; 不显示每日提醒
 (setq inhibit-startup-message t)
 
