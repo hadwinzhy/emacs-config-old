@@ -25,3 +25,6 @@
 [submodule "3rd-party/inf-ruby"]
 	path = 3rd-party/inf-ruby
 	url = git@github.com:nonsequitur/inf-ruby.git
+[submodule "3rd-party/dockerfile-mode"]
+	path = 3rd-party/dockerfile-mode
+	url = git@github.com:spotify/dockerfile-mode.git
