@@ -28,3 +28,6 @@
 [submodule "3rd-party/dockerfile-mode"]
 	path = 3rd-party/dockerfile-mode
 	url = git@github.com:spotify/dockerfile-mode.git
+[submodule "3rd-party/magit"]
+	path = 3rd-party/magit
+	url = git://github.com/magit/magit.git
