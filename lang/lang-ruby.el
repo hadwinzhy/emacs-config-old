@@ -21,8 +21,8 @@
 (ruby-mode-hook)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;; rubocop
-
-(add-hook 'ruby-mode-hook 'rubocop-mode)
 (require 'rubocop)
+(require 'tramp)
+(add-hook 'ruby-mode-hook 'rubocop-mode)
 
 (provide 'lang-ruby)
